@@ -1,0 +1,5 @@
+.idea
+target
+.gradle
+savedSudokuGame.txt
+logging.log

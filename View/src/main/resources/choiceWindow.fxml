@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="choiceWindowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sudoku.ChoiceWindowController">
+    <Label fx:id="gameNameChoiceWindow" alignment="CENTER" contentDisplay="CENTER" layoutY="38.0" prefWidth="700.0" text="gameName" textAlignment="CENTER" textFill="#2c5cd7">
+        <font>
+            <Font name="Open Sans ExtraBold" size="36.0" />
+        </font>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+    </Label>
+    <Label fx:id="authors" alignment="CENTER" layoutY="90.0" prefWidth="700.0" text="authors" textAlignment="CENTER" textFill="#121212">
+        <font>
+            <Font name="Open Sans Medium" size="16.0" />
+        </font>
+    </Label>
+    <Button fx:id="englishButton" onAction="#setEnglishLanguage" layoutX="250.0" layoutY="193.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="95.0" text="languageEnglish" textAlignment="CENTER" textFill="#616161">
+        <font>
+            <Font name="Open Sans SemiBold" size="14.0" />
+        </font>
+    </Button>
+    <Button fx:id="polishButton" onAction="#setPolishLanguage" layoutX="355.0" layoutY="193.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="95.0" text="languagePolish" textAlignment="CENTER" textFill="#616161">
+        <font>
+            <Font name="Open Sans SemiBold" size="14.0" />
+        </font>
+    </Button>
+    <ComboBox fx:id="difficultyComboBox" layoutX="250.0" layoutY="238.0" prefHeight="35.0" prefWidth="200.0" promptText="selectDifficulty" />
+    <Button fx:id="startGameButton" disable="true" layoutX="225.0" layoutY="413.0" mnemonicParsing="false" onAction="#startGame" prefHeight="45.0" prefWidth="250.0" text="startGame" textAlignment="CENTER" textFill="#2c5cd7">
+        <font>
+            <Font name="Open Sans ExtraBold" size="16.0" />
+        </font>
+    </Button>
+</Pane>
